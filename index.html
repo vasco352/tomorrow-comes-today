@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tomorrow Comes Today* — Pesquisa cenário 23</title>
+  <link rel="stylesheet" href="projeto1.css">
+</head>
+<body>
+
+  <canvas id="bg" class="bg" aria-hidden="true"></canvas>
+
+  <h1 class="title">Tomorrow<br>Comes<br>Today*</h1>
+
+  <button id="back" class="back" type="button" hidden>← cenário 23</button>
+
+  <!-- Aqui dentro o JavaScript cria as bolas e as linhas -->
+  <main id="stage" class="stage" aria-label="Mapa da pesquisa">
+    <svg id="lines" class="lines" aria-hidden="true"></svg>
+  </main>
+
+  <footer class="footer">
+    <span>Vasco Guerreiro</span>
+    <span id="footer-right">Pesquisa cenário 23</span>
+  </footer>
+
+  <!-- Painel de descrição (cenário, variáveis e referências) -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <article class="panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button id="modal-close" class="modal-close" type="button" aria-label="Fechar">×</button>
+      <header class="panel-head">
+        <p id="modal-kicker" class="modal-kicker"></p>
+        <h2 id="modal-title"></h2>
+      </header>
+      <div class="panel-grid">
+        <div id="modal-body" class="modal-body"></div>
+        <div id="modal-media" class="media"></div>
+      </div>
+      <a id="modal-link" class="modal-link" href="#" target="_blank" rel="noopener" hidden>Abrir referência ↗</a>
+    </article>
+  </div>
+
+  <!-- Imagem em ecrã inteiro -->
+  <div id="lightbox" class="lightbox" hidden>
+    <img id="lightbox-img" alt="">
+    <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Fechar imagem">×</button>
+  </div>
+
+  <!-- Página "my vision" -->
+  <section id="vision" class="vision" aria-label="my vision" hidden>
+    <canvas id="vision-bg" class="vision-bg" aria-hidden="true"></canvas>
+    <div id="vision-photos" class="vision-photos"></div>
+    <p id="vision-question" class="vision-question" aria-live="polite"></p>
+    <div id="vision-text-tl" class="vision-text tl"></div>
+    <div id="vision-text-br" class="vision-text br"></div>
+  </section>
+
+  <script src="wave.js"></script>
+  <script src="projeto1.js"></script>
+  <script src="vision.js"></script>
+</body>
+</html>
+
