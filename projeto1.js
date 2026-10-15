@@ -166,7 +166,7 @@ const CONTENT = {
       { src: 'media/vision5.png', alt: 'Foto 5' },
       { src: 'media/vision7.png', alt: 'Foto 6' },
       { src: 'media/vison6.png', alt: 'Foto 7' },
-      { src: '/Users/vascoguerreiro/Desktop/projeto 1.2/media/vision8.png', alt: 'Foto 8' }
+      { src: 'media/vison8.png', alt: 'Foto 8' }
     ]
   }
 };
